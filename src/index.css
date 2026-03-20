@@ -1,0 +1,59 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0a0a0f;
+  color: #ffffff;
+}
+body {
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Rajdhani', sans-serif;
+}
+/* Custom Audio Visualizer Animation */
+@keyframes eq-play {
+  0% { height: 10%; }
+  50% { height: 100%; }
+  100% { height: 10%; }
+}
+.eq-bar {
+  animation: eq-play 1s ease-in-out infinite;
+  transform-origin: bottom;
+}
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: rgba(19, 19, 26, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+/* Text Glow Utilities */
+.text-glow-nova { text-shadow: 0 0 20px rgba(255, 45, 120, 0.6); }
+.text-glow-velvet { text-shadow: 0 0 20px rgba(155, 89, 255, 0.6); }
+.text-glow-solar { text-shadow: 0 0 20px rgba(255, 140, 0, 0.6); }
+.text-glow-crystal { text-shadow: 0 0 20px rgba(0, 212, 255, 0.6); }
+.text-glow-midnight { text-shadow: 0 0 20px rgba(230, 57, 86, 0.6); }
+/* Hide scrollbar for clean look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c1c26;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333344;
+}
